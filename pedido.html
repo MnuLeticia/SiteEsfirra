@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="stylesheet" href="styles/formulario.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Pedido</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="c__menu">
+            <a class="logo" href="index.html"> <img src="imagens/Logoesfiha.jpeg" alt="Makan Hulw"  height="90" width="90"></a>
+            <a class="cm__link" href="index.html"><button class="botao">Inicio</button></a>
+            <a class="cm__link" href="quemsomos.html"><button class="botao">Quem Somos</button></a>
+            <a class="cm__link" href="contato.html"><button class="botao">Contato</button></a>
+            <a class="cm__link" href="produto.html"><button class="botao">Produto</button></a>
+            <button class="close-menu" id="close-menu">X</button>
+        </nav>
+        <div class="menu-icon" id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </header>
+    <center>
+        <h1>Formulário de Pedidos</h1>
+    </center>
+    <section>
+        <form id="pedidoForm" method="get">
+            <fieldset>
+                <legend>Ticket</legend>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" required placeholder="Nome">
+                <label for="quantidadePedidos">Quantidade de Esfirras</label>
+                <input type="number" id="quantidadePedidos" placeholder="Quantidade de Esfirras"><br>
+                <label for="formaPagamento">Formas de Pagamento</label>
+                <select id="formaPagamento">
+                    <option value="" selected>SELECIONE</option>
+                    <option value="dinheiro">DINHEIRO</option>
+                    <option value="pix">PIX</option>
+                </select><br>
+                <label for="duvidas">Dúvidas ou Sugestões</label>
+                <textarea style="resize: none;" id="duvidas" name="duvidasSugestões" rows="5" cols="50" placeholder="Dúvidas ou Sugestões..."></textarea>
+                <button class="enviar" type="submit" onclick="sendwhatsapp();">Enviar</button><br>
+                <p class="legenda-f">*Para fazer o pedido, favor preencher os três primeiros campos</p><br>
+                <p class="legenda-f">*Para Dúvidas ou Sugestões, favor preencher o nome</p>
+            </fieldset>
+        </form>
+    </section>
+    <br>
+
+    <div id="social-links">
+        <a href="https://www.instagram.com/makan_hulw?igsh=MWx0OHZmemV0ZzdqbA%3D%3D" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+    </div>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Antonio Marques, Leonardo Santos e Leticia Moreira do 4° semestre de Gestão da Tecnologia da Informação </p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            const menu = document.querySelector('.c__menu');
+            menu.style.display = 'flex';
+        });
+    
+        document.getElementById('close-menu').addEventListener('click', function() {
+            const menu = document.querySelector('.c__menu');
+            menu.style.display = 'none';
+        });
+    </script>
+  
+    
+</body>
+</html>

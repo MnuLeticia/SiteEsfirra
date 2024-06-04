@@ -1,0 +1,84 @@
+@font-face {
+    font-family: font;
+    src: url(/higuen/Higuen\ Serif.otf);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.image {
+    width: 200px;
+    height: 300px; 
+    margin: 10px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+    transition: 0.5s;
+    border: 2px solid  #FFDE59;
+}
+
+
+
+.image:nth-child(1) {
+    background-image: url("/imagens/foto1.jpeg");
+}
+.image:nth-child(2) {
+    background-image: url("/imagens/foto2.jpeg");
+}
+.image:nth-child(3) {
+    background-image: url("/imagens/foto3.jpeg");
+}
+.image:nth-child(4) {
+    background-image: url("/imagens/foto4.jpeg");
+}
+.image:nth-child(5) {
+    background-image: url("/imagens/foto5.jpeg");
+}
+
+
+.image:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.562) 5%, transparent);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.image .about {
+    color: aliceblue;
+    position: absolute;
+    width: 150px; 
+    padding: 0 20px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.image:hover .about {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.about .name {
+    font-size: 24px; 
+    line-height: 20px;
+    color: rgb(230, 249, 108);
+    margin: 10px 0; 
+}
+
+.text{
+    margin-top: 50px;
+}

@@ -1,0 +1,125 @@
+@font-face {
+    font-family: font;
+    src: url(/higuen/Higuen\ Serif.otf);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    margin: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.card-front {
+    background-color: #6A2C70;
+    transform: rotateY(0deg);
+    border: 2px solid #FFDE59;
+}
+
+.card-back {
+    background-color: #F8362F;
+    color: white;
+    transform: rotateY(180deg);
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.card-back p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: font, Arial, sans-serif;
+}
+
+
+.apresentacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.apresentacao__imagem {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.apresentacao__conteudo {
+    max-width: 55%;
+    flex-grow: 1;
+}
+
+
+.apresentacao__conteudo__titulo {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+
+.apresentacao__conteudo__texto {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .apresentacao__imagem {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .apresentacao__conteudo {
+        max-width: 100%;
+    }
+}

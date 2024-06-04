@@ -1,0 +1,161 @@
+@font-face {
+  font-family: font;
+  src: url(/higuen/Higuen\ Serif.otf);
+}
+
+body {
+  font-family: font, Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 10px;
+  margin: 30px;
+}
+
+section {
+  margin: 50px auto;
+  width: 80%;
+  max-width: 500px; 
+  background-color: #FFDE59;
+  padding: 34px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+  color: #F8362F;
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left; 
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.enviar {
+  margin: 10px;
+  background-color: #20a120;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.enviar:hover {
+  background-color: #2a8f21;
+}
+
+.legenda-f {
+  font-size: 12px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  padding: 16px; 
+  color: #F8362F;
+  background-color: #FFDE59;
+  font-size: 18px; 
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+      width: 90%;
+  }
+  
+  legend {
+      font-size: 20px; 
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+      width: 90%;
+      padding: 8px; 
+  }
+  
+  button.enviar {
+      padding: 8px 16px; 
+  }
+
+  
+}
+
+@media screen and (max-width: 480px) {
+  section {
+      width: 90%; 
+      padding: 20px; 
+  }
+
+  legend {
+      font-size: 18px; 
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select {
+      padding: 8px; 
+      font-size: 14px; 
+  }
+
+  button.enviar {
+      padding: 8px 16px; 
+      font-size: 14px; 
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  section {
+      width: 95%; 
+      padding: 15px; 
+  }
+
+  legend {
+      font-size: 16px; 
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select {
+      width: 100%;
+      padding: 6px; 
+      font-size: 10px; 
+  }
+
+  button.enviar {
+      padding: 6px 12px; 
+      font-size: 12px; 
+  }
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contato.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Contato</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="c__menu">
+            <a class="logo" href="index.html"> <img src="imagens/Logoesfiha.jpeg" alt="Makan Hulw"  height="90" width="90"></a>
+            <a class="cm__link" href="index.html"><button class="botao">Inicio</button></a>
+            <a class="cm__link" href="quemsomos.html"><button class="botao">Quem Somos</button></a>
+            <a class="cm__link" href="produto.html"><button class="botao">Produto</button></a>
+            <a class="cm__link" href="pedido.html"><button class="botao">Pedido</button></a>
+            <button class="close-menu" id="close-menu">X</button>
+        </nav>
+        <div class="menu-icon" id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Contate-nos</h1>
+            <p class="apresentacao__conteudo__texto">
+                Estamos aqui para te atender da melhor maneira possivel!
+            </p>
+            <br><br>
+            <h2 class="apresentacao__conteudo__titulo">Telefone</h2>
+            <p class="apresentacao__conteudo__texto">
+            <ul class="apresentacao__conteudo__texto">
+                <p>WhatsApp (18)99729-3116 </p> 
+                <p>Localização: Av. Dom Antônio, 2100 - Parque Universitario, Assis - SP, 19806-900 </p> 
+                <p>Unesp Assis-Sp </p> 
+            </ul>
+            </p>
+            <br>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.1762996853977!2d-50.44223121114501!3d-22.647214499999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9495398f103cdbd3%3A0xf49e6748feb2ceaa!2sFaculdade%20de%20Tecnologia%20de%20Assis!5e0!3m2!1spt-BR!2sbr!4v1715766107104!5m2!1spt-BR!2sbr" 
+                width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </section>
+        <img class="apresentacao__imagem" src="imagens/Logoesfiha.jpeg" alt="Foto" >
+    </main> 
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div id="social-links">
+        <a href="https://www.instagram.com/makan_hulw?igsh=MWx0OHZmemV0ZzdqbA%3D%3D" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+    </div>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Antonio Marques, Leonardo Santos e Leticia Moreira do 4° semestre de Gestão da Tecnologia da Informação </p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+        const menu = document.querySelector('.c__menu');
+        menu.style.display = 'flex';
+    });
+
+    document.getElementById('close-menu').addEventListener('click', function() {
+        const menu = document.querySelector('.c__menu');
+        menu.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
